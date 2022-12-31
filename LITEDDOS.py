@@ -14,7 +14,7 @@ violate="\033[1;37m"
 nc="\033[00m"
 BIRed="\033[1;91m"
 
-def usage():
+class logo:
   @classmethod
   def tool_header(self):
     print(f'''\007
@@ -34,9 +34,7 @@ def usage():
 
 os.system("clear")
 
-def usage2():
-  @classmethod
-  def tool_header2(self):
+def usage():
     print(f'''\007
     {green}#########################################################
     #------------------------[{BIRed}LITE-DDOS{green}m]---------------------#
@@ -83,4 +81,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
